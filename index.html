@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Treasure Hunt Adventure</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div id="game-container" class="game-container">
+        <img id="background-image" src="背景.jpg" alt="游戏开始背景图片" class="background-image">
+        <div id="display" class="display-message"></div>
+        <button id="startButton" class="action-button">开始寻宝</button>
+        <button id="nextStepButton" class="action-button" style="display:none;">下一步</button>
+        <input id="puzzleInput" class="input-field" type="text" placeholder="输入谜题答案" style="display:none;">
+        <div id="errorDisplay" class="error-message"></div>
+        <button id="restartButton" class="action-button" style="display:none;">重新开始</button>
+        <div id="choiceButtonsContainer" style="display:none;"></div>
+    </div>
+    <!-- 添加背景音乐 -->
+    <audio id="background-music" loop>
+        <source src="音乐.mp3" type="audio/mpeg">
+    </audio>
+    <script src="treasureMap.js"></script>
+</body>
+
+</html>
